@@ -8,7 +8,7 @@ import {
   useDeleteAllCartMutation,
   useGetAllCartsQuery,
 } from "../Redux/cartApi";
-import { calcDiscount, newCalcDiscount } from "../utils/general";
+import { newCalcDiscount } from "../utils/general";
 import SideCartCard from "./cart/SideCartCard";
 import CartProgress from "./CartProgress";
 

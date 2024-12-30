@@ -264,7 +264,7 @@
   gap: 10px;
 
   & button {
-    color: #ad6b46;
+    color: #000;
     display: block;
     text-decoration: underline;
   }

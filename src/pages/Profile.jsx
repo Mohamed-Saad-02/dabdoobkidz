@@ -32,8 +32,6 @@ export default function Profile() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { step } = useParams();
-  const [PromoCodes, setPromoCodes] = useState(null);
-  const [helpOption, setHelpOption] = useState("1");
   const [currentId, setCurrentId] = useState("");
   const [alertType, setAlertType] = useState("");
   const [address, setAddress] = useState({});

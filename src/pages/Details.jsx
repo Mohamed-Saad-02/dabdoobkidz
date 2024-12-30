@@ -517,7 +517,7 @@ export default function Details() {
                   </span>
                 )
               ) : (
-                <span style={{ color: "red" }}> out of stock </span>
+                <span style={{ color: "#000" }}> out of stock </span>
               )}
             </div>
 

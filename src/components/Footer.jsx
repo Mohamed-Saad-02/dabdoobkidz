@@ -1,28 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 
-import logoChristmas from "../images/logoChristmas.svg";
 import styles from "../styles/components/Footer.module.css";
 
+import { EmailOutlined } from "@mui/icons-material";
 import { Link } from "react-router-dom";
-import brownEmail from "../images/brown-email.svg";
 
 export default function Footer() {
-  const [emailValue, setEmailInputValue] = useState("");
-
   return (
     <>
       {/* footer 1 */}
       <div
         className={`${styles["primary-footer-container"]} padding-container`}
       >
-        <div className={styles.logo}>
-          <img
-            loading="lazy"
-            src={logoChristmas}
-            alt="logo"
-            width={340}
-            height={340}
-          />
+        <div
+          className={styles.logo}
+          style={{
+            fontSize: "3rem",
+            fontWeight: "bold",
+          }}
+        >
+          Logo
         </div>
 
         <div className={styles.section}>
@@ -53,28 +50,13 @@ export default function Footer() {
         </div>
         <div className={styles.section}>
           <div className={styles.header}>Find Us</div>
-          <a
-            href="https://www.instagram.com/dabdoobkidz?igsh=MTJlMXN0ZWI4MmFxeQ=="
-            target="_blank"
-            className={styles.link}
-            rel="noreferrer"
-          >
+          <a href="##" target="_blank" className={styles.link} rel="noreferrer">
             Instagram
           </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61555247997096&mibextid=JRoKGi"
-            target="_blank"
-            className={styles.link}
-            rel="noreferrer"
-          >
+          <a href="##" target="_blank" className={styles.link} rel="noreferrer">
             Facebook
           </a>
-          <a
-            href="https://www.tiktok.com/@dabdoobkidz?lang=en"
-            target="_blank"
-            className={styles.link}
-            rel="noreferrer"
-          >
+          <a href="##" target="_blank" className={styles.link} rel="noreferrer">
             Tiktok
           </a>
         </div>
@@ -91,14 +73,8 @@ export default function Footer() {
             arrivals
           </div>
           <div className={styles["email-container"]}>
-            <input
-              className={styles["email-input"]}
-              placeholder="You Email"
-              onChange={(e) => {
-                setEmailInputValue(e.target.value);
-              }}
-            />
-            <img src={brownEmail} alt="email" />
+            <input className={styles["email-input"]} placeholder="You Email" />
+            <EmailOutlined />
           </div>
         </div>
       </div>

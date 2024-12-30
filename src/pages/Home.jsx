@@ -1,21 +1,21 @@
-import React, { useState, useEffect, lazy, Suspense } from "react";
-import styles from "../styles/pages/Home.module.css";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import { Box } from "@mui/material";
-import OfferCard from "../components/OfferCard";
-import Loader from "../components/Loader";
-import Category from "../components/Category";
-import { wishlistActions } from "../Redux/store";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import instance from "../utils/interceptor.js";
 import { useNavigate } from "react-router-dom";
-import { getProducts, getWishlistItems, authorize } from "../utils/apiCalls.js";
-import { notifyError } from "../utils/general.js";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import Category from "../components/Category";
 import BannerSwiper from "../components/Home/BannerSwiper.jsx";
-import NewArrival from "../components/Home/NewArrival.jsx";
 import LayoutBrands from "../components/Home/LayoutBrands.jsx";
+import NewArrival from "../components/Home/NewArrival.jsx";
+import Loader from "../components/Loader";
+import OfferCard from "../components/OfferCard";
+import { wishlistActions } from "../Redux/store";
+import styles from "../styles/pages/Home.module.css";
+import { authorize, getProducts, getWishlistItems } from "../utils/apiCalls.js";
+import { notifyError } from "../utils/general.js";
+import instance from "../utils/interceptor.js";
 
 // Lazy load components
 const DailySaleComponent = lazy(() =>

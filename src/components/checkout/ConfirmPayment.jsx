@@ -310,7 +310,7 @@ export default function ConfirmPayment({
             style={{
               display: "flex",
               justifyContent: "space-between",
-              color: " #AD6B46",
+              color: "#444",
             }}
           >
             <h2
@@ -351,7 +351,7 @@ export default function ConfirmPayment({
               {price.totalPrice}EGP
             </h2>
           </div>
-          <div style={{ textAlign: "center", color: "red" }}>
+          <div style={{ textAlign: "center", color: "#888" }}>
             {!address?.items?.[0]?.id || !addressActive
               ? "please enter address "
               : null}

@@ -62,7 +62,7 @@
 }
 
 .categoryButtonActive {
-  color: #ad6b46;
+  color: #000;
 }
 
 .divider {
@@ -92,5 +92,5 @@
 
 .loader {
   font-size: 1.5rem;
-  color: #ad6b46;
+  color: #000;
 }

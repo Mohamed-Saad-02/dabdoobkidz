@@ -8,8 +8,6 @@ import { cartActions } from "../Redux/store";
 import SideCartCardOffline from "./cart/SideCartCardOffline";
 import Form from "./Form";
 
-import CartProgress from "./CartProgress";
-
 import { newCalcDiscount } from "../utils/general.js";
 
 export default function Cart({ toggleDrawer }) {

@@ -5,13 +5,10 @@ import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import Form from "../components/Form";
 import bag from "../images/bag.svg";
-import brownBag from "../images/brown-bag.svg";
-import brownHeart from "../images/brown-heart.svg";
 import burger from "../images/burger.png";
 import email from "../images/email.svg";
 import heart from "../images/heart.svg";
 import lense from "../images/lense.svg";
-import logoChristmas from "../images/logoChristmas.svg";
 import phone from "../images/phone.svg";
 import user from "../images/user.svg";
 import { useGetAllCartsQuery } from "../Redux/cartApi";
@@ -189,18 +186,17 @@ export default function Header({ setOpen }) {
             <Link
               to="/"
               style={{
-                height: "38px",
+                // height: "38px",
                 overflow: "hidden",
                 display: "grid",
                 placeContent: "center",
+                textDecoration: "none",
+                fontSize: 22,
+                fontWeight: "bold",
+                color: "#000",
               }}
             >
-              <img
-                src={logoChristmas}
-                className=""
-                style={{ width: "100px" }}
-                alt="logo "
-              />
+              Logo
             </Link>
 
             {categories &&
@@ -270,7 +266,7 @@ export default function Header({ setOpen }) {
               {isUser ? (
                 <>
                   <img
-                    src={brownHeart}
+                    src={heart}
                     className={styles.clickable}
                     style={{ marginLeft: "10px", marginRight: "10px" }}
                     width="25px"
@@ -306,7 +302,7 @@ export default function Header({ setOpen }) {
               {isUser ? (
                 <>
                   <img
-                    src={brownBag}
+                    src={bag}
                     className={styles.clickable}
                     style={{ marginLeft: "10px", marginRight: "10px" }}
                     width="25px"
