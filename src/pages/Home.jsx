@@ -178,25 +178,25 @@ export default function Home() {
             {[
               {
                 id: "1",
-                img: "/offer-1.svg",
+                img: "/offer-1.png",
                 title: "Best Quality Guarantee",
                 body: "Product that arrived at your door already passed our Quality Control procedure.",
               },
               {
                 id: "2",
-                img: "/offer-2.svg",
+                img: "/offer-2.png",
                 title: "Easy Payment Choice",
                 body: "Various payment choice will give an ease every time you purchase our product.",
               },
               {
                 id: "3",
-                img: "/offer-3.svg",
+                img: "/offer-3.png",
                 title: "On-Time Delivery",
                 body: "We will make sure that all product that you purchased will arrived at your address safely.",
               },
               {
                 id: "4",
-                img: "/offer-4.svg",
+                img: "/offer-4.png",
                 title: "Best Price",
                 body: "We are offering the best prices of the most authentic UK brands to your door step without taxes or extra fees.",
               },

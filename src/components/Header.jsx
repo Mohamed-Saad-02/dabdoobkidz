@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import Form from "../components/Form";
 import bag from "../images/bag.svg";
-import burger from "../images/burger.png";
 import email from "../images/email.svg";
 import heart from "../images/heart.svg";
 import lense from "../images/lense.svg";
@@ -23,6 +22,8 @@ import Cart from "./Cart";
 import CartDrawOffline from "./CartDrawOffline";
 import Dropdown from "./Dropdown";
 import LoaderSpinner from "./LoaderSpinner";
+import { Menu } from "@mui/icons-material";
+import { Box } from "@mui/material";
 export default function Header({ setOpen }) {
   const debouncedHandleInputChange = useCallback(
     debounce((value) => {
@@ -359,16 +360,16 @@ export default function Header({ setOpen }) {
                 Sign in
               </Link>
             )}
-            <img
+            <div
               id="action-component"
-              src={burger}
-              className={`${styles.clickable} hidden-on-large-screen show-on-small-screen`}
               style={{ marginLeft: "10px", width: "30px" }}
+              className={`${styles.clickable} hidden-on-large-screen show-on-small-screen`}
               onClick={() => {
                 setOpen((prev) => !prev);
               }}
-              alt="burger"
-            />
+            >
+              <Menu />
+            </div>
           </div>
         </div>
       </div>
