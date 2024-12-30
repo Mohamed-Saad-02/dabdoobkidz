@@ -153,7 +153,7 @@ export default function Header({ setOpen }) {
               }}
             >
               <img src={email} alt="email" />
-              <div>Kidzdabdoob@gmail.com</div>
+              <div>example@example.com</div>
             </div>
             <div
               style={{
@@ -164,7 +164,7 @@ export default function Header({ setOpen }) {
               }}
             >
               <img src={phone} alt="phone" />
-              <div>01111163654</div>
+              <div>11111111111</div>
             </div>
           </div>
         </div>

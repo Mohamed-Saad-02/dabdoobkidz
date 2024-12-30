@@ -1,16 +1,14 @@
-import { useState } from "react";
-import styles from "../styles/pages/Summary.module.css";
-import promo from "../images/promo.png";
-import x from "../images/x.png";
-import add from "../images/add.png";
-import edit from "../images/edit.png";
-import fedex from "../images/fedex.png";
-import dabdobkidz from "../images/dabdobkidz.png";
-import OrderCard from "../components/OrderCard";
+import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
+import { useState } from "react";
+import OrderCard from "../components/OrderCard";
 import Popup from "../components/Popup";
+import add from "../images/add.png";
+import edit from "../images/edit.png";
+import promo from "../images/promo.png";
+import x from "../images/x.png";
+import styles from "../styles/pages/Summary.module.css";
 export default function Summary() {
   const [promocode, setPromocode] = useState("");
   const [open, setOpen] = useState(false);
@@ -224,7 +222,7 @@ export default function Summary() {
           <div className={styles.title_main}>Sub Total</div>
           <div className={styles.title_main}>EGP {`3.010.00`}</div>
         </div>
-       
+
         <button
           className={styles.brown_button}
           // disabled={!address.address || !promocode}
