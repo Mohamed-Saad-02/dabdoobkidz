@@ -12,11 +12,11 @@ export default function Login() {
     >
       {" "}
       <Helmet>
-        <title>{"Dabdoob Kidz | login page"}</title>
+        <title>{"E-commerce | login page"}</title>
         <meta
           name="description"
           content={
-            "Join the Dabdoob Kidz Fun! login for your child's free account and unlock a world of exciting activities, games, and learning adventures designed especially for kids"
+            "Join the E-commerce Fun! login for your child's free account and unlock a world of exciting activities, games, and learning adventures designed especially for kids"
           }
         />
       </Helmet>

@@ -409,32 +409,6 @@ export default function Header({ setOpen }) {
               </>
             )}
           </div>
-          {/* <div className={styles.line}></div>
-          <div
-            className={styles["dropdown-section"]}
-            style={{ justifyContent: "center", alignItems: "center" }}
-          >
-            <div className={styles.card}>
-              <div className={styles["card-image"]}>
-                <img src={gift} />
-                <img src={baby1} />
-              </div>
-              <div className={styles["card-text"]}>
-                Baby & Kids, Moms, accessories & more
-              </div>
-            </div>
-          </div>
-          <div className={styles.line}></div>
-          <div className={styles["dropdown-section"]}>
-            <div className={styles.card}>
-              <img src={baby2} style={{ borderRadius: "8px" }} />
-              <div style={{ fontSize: "24px" }}>Dabdoob Kidz</div>
-              <div style={{ fontSize: "18px", color: "var(--dark-grey)" }}>
-                How to give your child the best sleep possible with our sleep
-                system
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
       {/* drawer */}

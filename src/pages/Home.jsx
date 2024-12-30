@@ -171,7 +171,7 @@ export default function Home() {
           <div
             className={`${styles["offers-title"]}  ${styles["offers-title-sub"]}`}
           >
-            Dabdoob KIDZ
+            E-commerce
           </div>
           <div className={styles["offers-title"]}>Best Value offers</div>
           <div className={styles["bottom-container"]}>

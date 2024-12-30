@@ -84,9 +84,6 @@ const BannerSwiper = () => {
                   style={{ backgroundImage: `url(${img})` }}
                 >
                   <Box>
-                    <Typography variant="h1" className={styles.bannerTitle}>
-                      Dabdoob KIDZ
-                    </Typography>
                     <Typography className={styles.bannerSubtitle}>
                       Make yourself look different without old-fashioned clothes
                       and impress others
